@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Datenschutz · Training Sync</title><meta name="description" content="Informationen zum privaten FIT-Archivierungsdienst Training Sync und seiner Datenverarbeitung."><link rel="stylesheet" href="style.css"></head>
+<body><header><a href="index.html">Training Sync</a><nav aria-label="Hauptnavigation"><a href="index.html">Projekt</a><a href="datenschutz.html">Datenschutz</a><a href="nutzung.html">Nutzung</a></nav></header>
+<main><p class="eyebrow">Datenverarbeitung</p><h1>Datenschutzerklärung</h1>
+<p class="intro">Diese Erklärung beschreibt die Datenverarbeitung durch Training Sync, einen privaten Dienst zur Archivierung eigener Trainingsdateien.</p>
+<h2>Betreiber und Zweck</h2>
+<p>Die Anwendung wird vom Inhaber der zugehörigen OAuth-Konfiguration für dessen eigene Garmin-, MyWhoosh- und Google-Konten betrieben. Kontakt ist die im Google-OAuth-Zustimmungsdialog angegebene Support-E-Mail. Zweck ist ausschließlich das Archivieren und Überprüfen eigener FIT-Originaldateien.</p>
+<h2>Welche Daten verarbeitet werden</h2>
+<p>Verarbeitet werden Trainingsdateien sowie Aktivitäts-IDs, Aktivitätsdatum, ursprüngliche Dateinamen, Dateigrößen, Prüfsummen und Verarbeitungsstatus. FIT-Dateien können je nach Aufzeichnung unter anderem Trainingszeiten, Leistungs-, Herzfrequenz- und Standortdaten enthalten.</p>
+<p>Für die Google-Drive-Archivierung werden Ordner und Dateien angelegt und Dateimetadaten sowie bei Bedarf Dateiinhalte zur Überprüfung abgerufen. Der Google-Berechtigungsumfang ist <code>https://www.googleapis.com/auth/drive.file</code>.</p>
+<h2>Speicherorte und Empfänger</h2>
+<p>Trainingsdateien und Verwaltungsdaten werden lokal auf dem Raspberry Pi des Betreibers gespeichert. Die FIT-Dateien werden zusätzlich über verschlüsselte HTTPS-Verbindungen an das vom Betreiber autorisierte Google-Drive-Konto übertragen. Zur Anmeldung werden die normalen Authentifizierungsverfahren der jeweiligen Anbieter verwendet.</p>
+<p>Zugriffs- und Sitzungstokens werden lokal beim Betreiber gespeichert. Sie gehören nicht auf diese Informationswebsite oder in öffentliche Quellcode-Repositories. Die Anwendung veröffentlicht keine Trainingsdateien und nutzt die abgerufenen Google-Daten weder für Werbung noch für den Verkauf von Daten oder das Training von KI-Modellen.</p>
+<p>Für die Verarbeitung innerhalb von Google Drive gelten zusätzlich die <a href="https://policies.google.com/privacy">Datenschutzhinweise von Google</a>. Für die Datenverarbeitung durch die Trainingsanbieter gelten deren eigene Datenschutzhinweise.</p>
+<h2>Aufbewahrung, Löschung und Widerruf</h2>
+<p>Das Archiv ist auf langfristige Speicherung ausgelegt. Der Dienst löscht lokale oder hochgeladene FIT-Dateien nicht automatisch. Dateien und Verwaltungsdaten verbleiben, bis der Betreiber sie manuell löscht.</p>
+<p>Der Google-Zugriff kann in den <a href="https://myaccount.google.com/connections">Google-Kontoeinstellungen für Drittanbieterverbindungen</a> widerrufen werden. Ein Widerruf stoppt die weitere autorisierte Verarbeitung, entfernt aber keine bereits gespeicherten Archivdateien. Lokale Tokens und Daten sowie Drive-Dateien müssen bei Bedarf gesondert gelöscht werden.</p>
+<h2>Besuch dieser Informationswebsite</h2>
+<p>Die Seiten enthalten keine eigenen Analyse-, Werbe- oder Tracking-Skripte und setzen selbst keine Cookies. Die Bereitstellung erfolgt über GitHub Pages. GitHub protokolliert beim Aufruf unter anderem IP-Adressen für Sicherheitszwecke. Weitere Informationen stehen in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.</p>
+<h2>Änderungen</h2>
+<p>Bei Änderungen der tatsächlichen Datenverarbeitung wird diese Erklärung entsprechend aktualisiert. Stand: 7. November 2026.</p><p><a href="index.html">Zur Projektbeschreibung</a></p></main><footer>Training Sync · Privates Archivierungsprojekt · Stand: 7. November 2026</footer></body></html>
