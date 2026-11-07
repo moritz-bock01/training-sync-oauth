@@ -9,7 +9,7 @@
 <p>Der Dienst legt Archivordner und FIT-Dateien im autorisierten Google-Drive-Konto an. Er liest Dateimetadaten und prüft die hochgeladenen Inhalte, um Übertragungen zu bestätigen und doppelte Uploads zu vermeiden.</p>
 <p>Die Freigabe erfolgt über Google OAuth mit dem Berechtigungsumfang <code>https://www.googleapis.com/auth/drive.file</code>. Dieser beschränkt den Zugriff auf die durch die Anwendung erstellten oder ihr freigegebenen Dateien.</p>
 <h2>Wie der Dienst arbeitet</h2>
-<p>Nach der Einrichtung startet die Synchronisierung auf dem Raspberry Pi zu jeder vollen und halben Stunde. Originaldateien bleiben unverändert; Prüfsummen und eine lokale Datenbank dienen zur Zuordnung und Wiederaufnahme fehlgeschlagener Übertragungen.</p>
+<p>Nach der Einrichtung startet die Synchronisierung auf dem Raspberry Pi alle 15 Minuten zu jeder Viertelstunde. Originaldateien bleiben unverändert; Prüfsummen und eine lokale Datenbank dienen zur Zuordnung und Wiederaufnahme fehlgeschlagener Übertragungen.</p>
 <div class="note">Training Sync ist eine persönliche Anwendung. Diese Website informiert über das Projekt. Sie bietet keine Anmeldung und keinen Zugriff auf Trainingsdaten.</div>
 <h2>Datenverarbeitung und Kontakt</h2>
 <p>Die <a href="datenschutz.html">Datenschutzerklärung</a> beschreibt Zugriff, Speicherung, Aufbewahrung und Widerruf. Ergänzend gelten die <a href="nutzung.html">Nutzungshinweise</a>.</p>
