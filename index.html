@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Projekt · Training Sync</title><meta name="description" content="Informationen zum privaten FIT-Archivierungsdienst Training Sync und seiner Datenverarbeitung."><link rel="stylesheet" href="style.css"></head>
+<body><header><a href="index.html">Training Sync</a><nav aria-label="Hauptnavigation"><a href="index.html">Projekt</a><a href="datenschutz.html">Datenschutz</a><a href="nutzung.html">Nutzung</a></nav></header>
+<main><p class="eyebrow">Privates Trainingsarchiv</p>
+<h1>Originale Trainingsdateien.<br>Im eigenen Archiv.</h1>
+<p class="intro">Training Sync archiviert die FIT-Originaldateien des Betreibers aus Garmin Connect und MyWhoosh auf einem eigenen Raspberry Pi und in dessen Google-Drive-Konto.</p>
+<p class="flow"><span>Garmin Connect / MyWhoosh</span> → <span>eigener Raspberry Pi</span> → <span>eigenes Google Drive</span></p>
+<h2>Wofür der Google-Zugriff verwendet wird</h2>
+<p>Der Dienst legt Archivordner und FIT-Dateien im autorisierten Google-Drive-Konto an. Er liest Dateimetadaten und prüft die hochgeladenen Inhalte, um Übertragungen zu bestätigen und doppelte Uploads zu vermeiden.</p>
+<p>Die Freigabe erfolgt über Google OAuth mit dem Berechtigungsumfang <code>https://www.googleapis.com/auth/drive.file</code>. Dieser beschränkt den Zugriff auf die durch die Anwendung erstellten oder ihr freigegebenen Dateien.</p>
+<h2>Wie der Dienst arbeitet</h2>
+<p>Nach der Einrichtung startet die Synchronisierung auf dem Raspberry Pi zu jeder vollen und halben Stunde. Originaldateien bleiben unverändert; Prüfsummen und eine lokale Datenbank dienen zur Zuordnung und Wiederaufnahme fehlgeschlagener Übertragungen.</p>
+<div class="note">Training Sync ist eine persönliche Anwendung. Diese Website informiert über das Projekt. Sie bietet keine Anmeldung und keinen Zugriff auf Trainingsdaten.</div>
+<h2>Datenverarbeitung und Kontakt</h2>
+<p>Die <a href="datenschutz.html">Datenschutzerklärung</a> beschreibt Zugriff, Speicherung, Aufbewahrung und Widerruf. Ergänzend gelten die <a href="nutzung.html">Nutzungshinweise</a>.</p>
+<p>Kontakt für das private Projekt ist die im Google-OAuth-Zustimmungsdialog angegebene Support-E-Mail des Betreibers.</p>
+<p>Training Sync ist ein unabhängiges privates Projekt und kein offizieller Dienst von Garmin, MyWhoosh oder Google.</p></main><footer>Training Sync · Privates Archivierungsprojekt · Stand: 7. November 2026</footer></body></html>
